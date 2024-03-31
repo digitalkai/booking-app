@@ -30,10 +30,15 @@ export default function BookingPage() {
                     <Row>
                         <h2>Welcome, {currentUser.email}</h2>
                         <IconButton
+                            className="bi bi-journals"
+                            text="Check bookings"
+                        />
+                        <IconButton
                             className="bi bi-door-closed"
                             text="Logout"
                             onClick={handleLogout}
                         />
+
 
                     </Row>
                     <Houses />

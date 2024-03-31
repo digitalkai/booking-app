@@ -72,7 +72,7 @@ export default function AuthPage() {
                 <Col sm={5} className="d-grid gap-2">
                     <Button className="rounded-pill" variant="outline-dark"
                         onClick={handleGoogleLogin}>
-                        <i className="bi bi-google"></i> Sign up with Google
+                        <i className="bi bi-google"></i> Sign in or sign up with Google
                     </Button>
 
 

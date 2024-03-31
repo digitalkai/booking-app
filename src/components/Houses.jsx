@@ -23,9 +23,10 @@ const Houses = () => {
             ) : (
                 <Wrapper>
                     <h3>Available Houses</h3>
+                    <br></br>
+                    <br></br>
                     <Splide options={{
                         perPage: 2,
-                        arrows: false,
                         pagination: false,
                         drag: "free",
                         gap: "5rem",
@@ -49,19 +50,32 @@ const Houses = () => {
 };
 
 const Wrapper = styled.div`
-    margin: 4rem 0rem;
+    margin: 4rem auto; 
+    text-align: center; 
 `;
 
 const Card = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
     min-height: 25rem;
     border-radius: 2rem;
     overflow: hidden;
 
-    img{
+    img {
         border-radius: 2rem;
+        width: 400px; 
+        height: 400px; 
+        object-fit: cover; 
     }
-    
+
+    p {
+        margin: 0.5rem 0; 
+    }
 `;
+
+
 
 
 export default Houses;
